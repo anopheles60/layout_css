@@ -1,0 +1,105 @@
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+
+    
+}
+.header {
+    background-color: #eee;
+    min-height: 50px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.logo img {
+    width: 200px;
+}
+.menu ul {
+    padding: 0;
+}
+.menu ul li {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+.menu ul li a {
+    padding: 10px 20px;
+    text-decoration: none;
+}
+ul.submenu{
+    background-color: #eee;
+    border: 1px solid #ccc;
+    text-align: left;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    display: none;
+}
+ul.submenu li {
+    display: block;
+}
+ul.submenu li a {
+    display: block;
+    padding: 5px 10px;
+}
+.menu ul li {
+    display: inline-block;
+    position: relative;
+}
+.menu ul li:hover ul.submenu {
+display: block;
+}
+.skill {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    list-style-type: none;
+    padding: 0;margin: 0;
+}
+body .skill{
+    background: #333;
+    text-transform: uppercase;
+}
+.skill h1{
+    text-align: center;
+}
+.skill h3 {
+    margin: 5px;
+}
+.skill {
+    width: 500px; margin: 60px auto; color: #fff; padding: 20px; box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.skill li {
+    margin: 20px 0;
+    padding: 10px;
+}
+.bar{
+    background: #353b48;
+    display: block;
+    height: 20px; border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.bar:hover {
+    box-shadow:  0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.bar span{
+    height: 20px;
+    float: left; background: linear-gradient(135deg, rgba(236, 0,140,1)0%, rgba(252,103,103,1)100%);
+}
+.html{
+    width: 70%; animation: html 3s;
+}
+.css {
+    width: 60%; animation: css 3s;
+}
+.javascrip{
+    width: 60%; animation: javascrip 3s;
+}
+@keyframes html{
+    0%{width:0%;} 100%{width:70%}
+}
+@keyframes css{
+    0%{width:0%;} 100%{width:60%}
+}
+@keyframes javascrip{
+    0%{width:0%;} 100%{width:60%}
+}

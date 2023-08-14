@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+</head>
+<style>
+    .container {
+        width: 800px;
+        margin: 0 auto;
+
+        
+    }
+        .header {
+            background-color: #eee;
+            min-height: 50px;
+            text-align: center;
+        }
+        .logo img {
+            width: 200px;
+        }
+        .menu ul {
+            padding: 0;
+        }
+        .menu ul li {
+            display: inline-block;
+            position: relative;
+            z-index: 1;
+        }
+        .menu ul li a {
+            padding: 10px 20px;
+            text-decoration: none;
+        }
+        ul.submenu{
+            background-color: #eee;
+            border: 1px solid #ccc;
+            text-align: left;
+            position: absolute;
+            top: 20px;
+            left: 0;
+            display: none;
+        }
+        ul.submenu li {
+            display: block;
+        }
+        ul.submenu li a {
+            display: block;
+            padding: 5px 10px;
+        }
+        .menu ul li {
+            display: inline-block;
+            position: relative;
+        }
+    .menu ul li:hover ul.submenu {
+        display: block;
+    }
+        .content {
+            background-color: #ddd;
+            min-height: 500px;
+            overflow: auto;
+        }
+        .thumbnail {
+            background-color: white;
+            text-align: center;
+            padding: 10px;
+            width: 225px;
+            margin: 10px;
+            float: left;
+
+        }
+        .thumbnail img {
+            width: 100%;
+        }
+        .jumbotron {
+            font-family: 'Raleway', sans-serif;
+            width: 100%;
+            padding: 80px 40px;
+            box-sizing: border-box;
+            text-align: center;
+            color: white;
+            background-color: #aaa;
+            background-image: url(photo-1515111293107-b0cd6448f5f6.webp);
+            background-size: cover;
+            position: relative;
+            
+        }
+        .overlay{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            opacity: 0.1;
+        }
+        .jumbotron h2,.jumbotron p {
+            position: relative;
+        }
+        .skill {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            list-style-type: none;
+            padding: 0;margin: 0;
+        }
+        body .skill{
+            background: #333;
+            text-transform: uppercase;
+        }
+        .skill h1{
+            text-align: center;
+        }
+        .skill h3 {
+            margin: 5px;
+        }
+        .skill {
+            width: 500px; margin: 60px auto; color: #fff; padding: 20px; box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+        }
+        .skill li {
+            margin: 20px 0;
+            padding: 10px;
+        }
+        .bar{
+            background: #353b48;
+            display: block;
+            height: 20px; border: 1px solid rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            overflow: hidden; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        }
+        .bar:hover {
+            box-shadow:  0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+        }
+        .bar span{
+            height: 20px;
+            float: left; background: linear-gradient(135deg, rgba(236, 0,140,1)0%, rgba(252,103,103,1)100%);
+        }
+        .html{
+            width: 70%; animation: html 3s;
+        }
+        .css {
+            width: 60%; animation: css 3s;
+        }
+        .javascrip{
+            width: 60%; animation: javascrip 3s;
+        }
+        @keyframes html{
+            0%{width:0%;} 100%{width:70%}
+        }
+        @keyframes css{
+            0%{width:0%;} 100%{width:60%}
+        }
+        @keyframes javascrip{
+            0%{width:0%;} 100%{width:60%}
+        }
+        .footer {
+            background-color: #ccc;
+            min-height: 50px;padding: 20px;
+            text-align: center;
+        }
+    </style>
+<body>
+<div class="container">
+    
+<div class="header">
+    <!-- <h1>Logo SMK</h1> -->
+    <div class="logo">
+    <img src="https://smkmuh1-skh.sch.id/wp-content/uploads/2020/12/Logo-smkmutuharjo-web-544.png" alt="">
+</div>
+    <div class="menu">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">About</a>        
+        <ul class="submenu">
+            <li><a href="keahlian.html">Keahlian</a></li>
+            <li><a href="#teman">Teman Dekat</a></li>
+            <li><a href="portofolio.html">Portofolio</a></li>
+         </ul> </li>
+
+
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</div>
+</div>
+<div class="jumbotron">
+    <div class="overlay"></div>
+    <h2>Hallo selamat Datang Di Website saya</h2>
+    <p>website ini adalah project layouting pertama saya yang berisi daftar teman kelas dan profile saya</p>
+    <p>Setiap orang memiliki kelebihan dan kelemahan masing-masing kita tidak bisa hebat dalam semua hal</p>
+    <p>Setiap orang memiliki kelebihan dan kelemahan masing-masing.
+        kita tidak bisa hebat dalam semua hal
+    </p>
+    <p>awali dengan "LEARN" dan selanjutnya akhiri dengan buang huruf "L"</p>
+
+</div>
+<div id="teman">
+<div class="content">
+    <h2>Daftar Siswa</h2>
+    <div class="thumbnail">
+        <img src="agaton.jpg" height ="240px" alt="">
+        <h2>Agaton</h2>
+        <p>Kelas XI PPLG 1</p>
+    </div>
+    <div class="thumbnail">
+        <img src="download.jpg" height ="240px" alt="">
+        <h2>Asking</h2>
+        <p>Kelas XI PPLG 1</p>
+    </div>
+    <div class="thumbnail">
+        <img src="OIP.jpg" height ="240px">
+        <h2>Lexion</h2>
+        <p>Kelas XI PPLG 1</p>
+    </div>
+    <div class="thumbnail">
+        <img src="th (1).jpg"  alt="">
+        <h2>Kiyosumi</h2>
+        <p>Kelas XI PPLG 1</p>
+    </div>
+</div></div>
+
+
+<div class="footer">
+    <p>copyright 2023| SMK Muhammadiyah 1 Sukoharjo</p>
+</div>
+</div>
+</body>
+</html>
